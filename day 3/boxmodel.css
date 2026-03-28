@@ -1,0 +1,15 @@
+/* block level element */
+div{
+    border-style:solid;
+    border-color:red;
+
+}
+/* Inline Element */
+span{
+    border-style:solid;
+    border-color:violet;
+    border-width:5px;
+    border-left: 4px solid green;
+     
+    border:5px solid red;
+}

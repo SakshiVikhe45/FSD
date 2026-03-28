@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#div{
+    border:1px solid black;
+    margin:10px;
+}
+#div2{
+    border: 4px solid black;
+    height: 40px;
+    width: 100px;
+    padding: 2px;
+}
+.parent{
+    background-color:blue ;
+
+}
+.child{
+    border:1px;color: brown;
+}
+/* Desendent selector which styles both directand indirect child */
+/* .parent .child{ */
+    color:beige;
+/*  */
+
+.parent >.child{
+    color:aliceblue;
+}
+/* Adjacent sibling selector */
+/* .d1 + p{
+    background-color red;
+/* } */
+.d1 ~ p{
+    background-color:blue;
+
+}
+
+._A123{
+    color: red;
+}
+._A1543{
+    color: red;
+}
