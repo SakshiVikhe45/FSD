@@ -1,38 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block and Inline</title>
     <style>
-        div{
-            border:40px dotted blue;
+        div {
+            border: 2px solid black;
+            height: 40px;
+            width: 100px;
+            padding: 10px;
+            margin: 20px;
         }
-        span{
-            border:40px solid blue;
+
+        span {
+            border: 4px solid blue;
+            height: 40px;
+            width: 100px;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        p{
+           border: 1px solid black;
+            height: 40px;
+           width: 100px;
+           display: inline;
+        }
+        i{
+           border: 1px solid black;
+           height: 40px;
+           width: 100px;
+           display: block;
+        }
+
+        b{
+            border: 1px solid black;
+             height: 40px;
+           width: 100px;
+           /* display: inline-block; */
+           display: none;
+
         }
     </style>
 </head>
+
 <body>
-    <div>block and element</div>
-    <div>Inline element</div>
-    <style>
-        div{
-            border:2px solid black;
-            height:40px;
-            width:100px;
-            padding:10px;
-            margin:40px;
-        }
-        span{
-             border:2px solid blue;
-            height:40px;
-            width:100px;
-        }
-    </style>
+
+    <!-- block level elemnt : it always starts in a new line
+                            : it occupies full width of a page
+                            : it supports height and width , padding and margin
+                           ex: div p heading tags article section
+
+        inline element : it doesn't start on a new line
+                       : it occupie the space much as needed
+                       : it won't support height and width
+                       : it won't support margin(top and bottom -- paritial support)
+                       ex: i , b, span , u , mark , strike , del, img  , label , input
+                       
+                       
+
+        to change we can use display property/ to convert from block -inline and vice vers
+        display -- block -- behaves like block 
+                   inline -- behaves like inline
+                   inline-block -- behaves like inline but supports height and width
+                   none - hide element
+                       -->
+    <div>block level element</div>
+    <span>inline element</span>
+
+
+
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <i>Lorem ipsum dolor sit amet.</i>
+
+    <hr>
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, repellat!</b>
+
+
+
+    <!-- <h1>Lorem ipsum <mark>dolor</mark> sit amet consectetur, adipisicing elit. Reiciendis maiores assumenda illum recusandae at
+        dolores quis necessitatibus <p>facere</p> impedit, vero tempore consequuntur ratione sed ad porro odio rem veniam velit
+        eveniet modi, tenetur amet nihil dignissimos. Recusandae libero impedit eligendi esse quisquam, rerum eum autem
+        earum in ducimus maxime pariatur?</h1>
+
+    <i>Lorem ipsum <mark>dolor</mark> sit amet consectetur adipisicing elit. Tenetur error quaerat minus molestiae, doloremque dicta
+        ad voluptates maiores necessitatibus placeat rerum laudantium molestias nesciunt quo, impedit aliquid voluptatum
+        ullam culpa odit velit magnam <p>alias</p> labore nam? Vel repellendus voluptatem unde eius saepe commodi corrupti,
+        quia aliquid, delectus odio iure distinctio?</i> -->
+
 
 </body>
-<body>
-    
-</body>
+
 </html>

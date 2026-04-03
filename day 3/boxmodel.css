@@ -1,15 +1,43 @@
 /* block level element */
 div{
-    border-style:solid;
-    border-color:red;
+   border-style: solid;
+   border-color: red;
+   border-width: 4px;
 
+   margin: 40px;
 }
-/* Inline Element */
+/* inline element */
 span{
-    border-style:solid;
-    border-color:violet;
-    border-width:5px;
-    border-left: 4px solid green;
-     
-    border:5px solid red;
+   /* border-style: solid;
+   border-color: violet;
+   border-width: 5px; */
+     margin: 40px;
+
+
+   /* shorthand structure */
+   border: 5px solid violet;
+   border-radius: 5px;
+   border-bottom: 4px solid green;
+
+
+
+   /* padding-right: 40px ;
+   padding-bottom: 30px;
+   padding-top: 20px;
+   padding-left: 50px; */
+
+   /* right left top bottom */
+   /* padding: 40px;   */
+
+   /* 20px - top&bottom   40px - left and right */
+   /* padding: 20px 40px; */
+
+   /*        top right bottom left */
+   /* padding: 20px 30px 40px 50px; */
+
+   /* margin:40px; */
+   margin-top: 400px;
+   margin-left: 50px
+   
+   
 }

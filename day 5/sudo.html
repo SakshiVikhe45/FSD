@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div::first-letter{
-        
-        }  </style>
-</head>
-<body>
+        div{
+            background-color: yellow;
+        }
 
-    
+        div::first-letter{
+            font-size: 40px;
+        }
+
+        p{
+            background-color: violet;
+            height: 100px;
+            width: 100px;
+        }
+        p:hover{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum accusamus, dignissimos quae non autem molestias
+        eos, illum amet dicta exercitationem magnam perferendis! Nihil ab molestiae quo, iste, quod voluptatum,
+        inventore atque eum rem esse ipsa delectus omnis. Natus quaerat inventore numquam consequuntur, maiores fuga qui
+        nisi reprehenderit reiciendis illo nam.
+    </div>
+
+    <p></p>
 </body>
+
 </html>
+
+<!-- pseudo class: based on state/ specific state
+                 --(single colon : )
+                 --whole part
+                 ex: :hover, :focus :active :visited :link :first-child :last-child :nth-child(n)
+
+
+     pseudo element : based on specific part of an element
+                --(double colon ::)
+                --part of an element
+
+
+-->

@@ -1,11 +1,40 @@
-div{
-    color:red;
-}
-#div4{
-    color:blue;
 
+
+
+
+/* id selector --- it indicates with #idName 
+               --- unique element styling
+               -- higher specificty */
+#div4{
+    color: blue;
 }
+
+/* class selector --- it indicates with .className
+                  --- can use multiple times
+                  -- lower than id */
+
 .div2{
     border:1px solid black;
-    color:green;
+    color: green;
+}
+
+/* element selector/tag selector -- it indicates with tagName */
+div{
+    color: red;
+}
+
+/* group selector -- collection of selectors separated with ,
+                    selector1,selector2,selector3 
+*/
+b ,i,del, #mark, .span{
+    display: block;
+    margin: 20px;
+}
+
+/* universal selector - it indicates with * and apply for
+                  all selectors and for all elements 
+                  - less specificty*/
+*{
+    background-color: grey;
+    margin: 10px;
 }
