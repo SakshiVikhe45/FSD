@@ -1,45 +1,95 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
+    /* box - sizing - that controld how the width and height
+                      of an element should be calculates
+                      
+                      default: content-box
+                widht-100
+                padding-20px
+                border-4px
+
+                       widht+padding-right+padding-left+border-right+border-left=
+        content-box : 100+20+20+4+4=148
+
+        border-box  : 52+20+20+4+4=100
+                      */
 }
+
 #div{
-    border:1px solid black;
-    margin:10px;
+    border: 1px solid black;
+    margin: 10px;
 }
+
 #div2{
     border: 4px solid black;
     height: 40px;
     width: 100px;
     padding: 2px;
-}
-.parent{
-    background-color:blue ;
+    
 
+}
+
+.parent{
+    background-color: blue;
 }
 .child{
-    border:1px;color: brown;
+   border: 1px solid red;
 }
-/* Desendent selector which styles both directand indirect child */
-/* .parent .child{ */
-    color:beige;
-/*  */
 
-.parent >.child{
-    color:aliceblue;
+
+
+/* Descendent selector -- which style both direct and indirect child */
+/* .parent .child{
+     color: beige;
+} */
+
+/* child selector-- which style only direct child */
+.parent>.child{
+    color: aliceblue;
 }
-/* Adjacent sibling selector */
+
+/* adjacent sibling selector-- select only immediate sibling/adjacent element */
 /* .d1 + p{
-    background-color red;
-/* } */
+    background-color: red;
+} */
+
+/* general sibling -- selects all sibling/adjacent elements */
 .d1 ~ p{
-    background-color:blue;
-
+    background-color: blue;
 }
 
-._A123{
+
+/* attribute selector */
+input[type="text"]{
+    background-color: aqua;
+}
+
+.-A123{
     color: red;
 }
-._A1543{
-    color: red;
+
+.A1543{
+    background-color: yellowgreen;
 }
+
+
+/* 
+
+Note: names need to start with a-z ,A-Z , _ , -
+
+   id  ---#
+   class---.
+   element---tagName
+   grouping--- s1,s2,s3
+   universal---*
+   descendent---p c --- all childs
+   child---p>c --- only direct child
+   adjacent sibling--- brother+sister --->next sister
+   general sibling---brother~sister ---->all sister
+   attribute selector --- select for attribute
+    */
+
+   
