@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+
+<body>
+
+    <form action="" method="" target="">
+        <fieldset>
+            <!-- <legend>Basic Info :</legend>
+         <label for="userName">UserName : </label>
+        <input type="text" name="userName" id="userName">  <br><br>
+         <label for="fatherName">FatherName : </label>
+        <input type="text" name="fatherName" id="fatherName"> <br><br>
+         <label for="motherName">MotherName : </label>
+        <input type="text" name="motherName" id="motherName"> <br><br>
+         <label for="dob">Date Of Birth : </label>
+        <input type="date" name="dob" id="dob"> <br><br>
+        <label for="age">Age : </label>
+        <input type="number" name="age" id="age" min="18" max="25"> <br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="female">Female
+        <input type="radio" name="gender" id="gender" value="other">Others <br><br> -->
+
+        </fieldset>
+
+        <fieldset>
+            <!-- <legend>Contact Info :</legend>
+       <label for="photo">Profile Photo </label>
+       <input type="file" name="photo" id="photo" accept="image/jpeg , image/png , image/*">
+     <br><br>
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email"> <br><br>
+         <label for="phone">Phone</label>
+         <input type="tel" name="phone" id="phone"> <br><br>
+          <label for="Linkedin">Linkedin Url</label>
+         <input type="url" name="Linkedin" id="Linkedin"> <br><br>
+         <label for="address">Address</label>
+         <textarea name="address" id="address" rows="5" cols="20"></textarea> -->
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Hobbies & Favourites</legend>
+            <label for="lang">Favourite Language</label>
+            <input type="checkbox" name="lang" id="lang" value="java">Java
+            <input type="checkbox" name="lang" id="lang" value="python" disabled>Python
+            <input type="checkbox" name="lang" id="lang" value="c">c
+            <input type="checkbox" name="lang" id="lang" value="sql">SQL
+
+
+            <br><br>
+            <label for="food">Food</label>
+            <select name="food" id="food">
+                <option value="" >----select Food Item---</option>
+                <optgroup label="Tiffins">
+                    <option value="idly">Idly</option>
+                    <option value="dosa">Dosa</option>
+                    <option value="upma">Upma</option>
+                </optgroup>
+                <optgroup label="NON-VEG">
+                    <option value="chicken biriyani">Chicken Biriyani</option>
+                    <option value="mutton biriyani">Mutton Biriyani</option>
+                </optgroup>
+            </select>
+
+      <br><br>
+
+            <label for="pets">Pets</label>
+            <input list="pets">
+            <datalist id="pets">
+               <option value="dog">
+               <option value="cat">
+               <option value="cow">
+            </datalist>
+        </fieldset>
+
+        <button type="submit">SUBMIT</button>
+        <BUtton type="reset">RESET</BUtton>
+    </form>
+</body>
+
+</html>

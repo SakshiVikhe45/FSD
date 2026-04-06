@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+
+    <style>
+
+        input[type],button{
+            background-color: hsl(0, 4%, 74%);
+            border: none;
+            border-radius: 5px;
+        }
+        input[type]{
+            margin: 3px;
+        }
+        button{ 
+            margin: 5px;
+            padding: 10px 20px;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Html Form</h1>
+    <form action="#">
+   <table>
+     <tr>
+        <td><label for="fName">First Name : </label></td>
+        <td><input type="text" name="fName" id="fName"></td>
+     </tr>
+     <tr>
+         <td><label for="lName">Last Name : </label></td>
+         <td> <input type="text" name="lName" id="lName"></td>
+     </tr>
+     <tr>
+        <td><label for="dob">Date Of Birth : </label></td>
+        <td><input type="text" name="dob" id="dob"></td>
+     </tr>
+     <tr>
+        <td><label for="email">Email Id : </label></td>
+        <td><input type="email" name="email" id="email"></td>
+     </tr>
+     <tr>
+        <td><label for="tel">Mobile Number : </label></td>
+        <td><input type="tel" name="tel" id="tel"></td>
+     </tr>
+
+   </table>
+      <br><br>
+
+     <button type="submit">SUBMIT</button>
+     <button type="reset">RESET</button>
+   </form>   
+</body>
+</html>

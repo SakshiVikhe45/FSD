@@ -35,6 +35,16 @@ command lines:
 
      https://miro.com/app/board/uXjVGosE1fg=/?share_link_id=275569899537
 
+
+   Day 9 Board Link:
+
+     https://miro.com/app/board/uXjVGoQbkRs=/?share_link_id=633437705340
+
 Project Task 1:
 ---------------
 https://spiffy-salmiakki-9dd19f.netlify.app/
+
+Project Task 2:
+https://headless-pizza.netlify.app/
+https://e-commerce-chi-five.vercel.app/
+https://responsive-e-commerce-website-with-html-css-js.vercel.app/

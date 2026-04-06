@@ -12,6 +12,8 @@
     background-color: #de4444;
     top: 20px;
     left:40px;
+    /* right: 60px;
+    bottom: 20px; */
     /* position: static; */
 }
 /* for static top , bottom , left ,right will applicable
@@ -64,11 +66,6 @@
     right: 0;
     bottom: 0;
 }
-
-
-
-
-
 
 .relative{
     width: 200px;

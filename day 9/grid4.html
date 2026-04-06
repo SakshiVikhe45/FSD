@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 4</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            min-height: 100vh;
+            display: grid;
+            grid-template-areas:"nav    nav    nav"
+                                "main   main   section"
+                                "main   main   section"
+                                "footer footer footer";
+            gap: 10px;
+        }
+
+        .container div{
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            color: white;
+
+        }
+        .navbar{
+            background-color: grey;
+            grid-area: nav;
+        }
+        .main{
+            background-color: green;
+            grid-area: main;
+        }
+        .section{
+            background-color: lightblue;
+            grid-area: section; 
+        }
+        .footer{
+            background-color: black;
+            grid-area: footer;
+             
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="navbar">navbar</div>
+        <div class="main">main</div>
+        <div class="section">section</div>
+        <div class="footer">footer</div>
+      </div>
+</body>
+</html>

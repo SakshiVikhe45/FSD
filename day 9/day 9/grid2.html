@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2 Example</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+      <style>
+        .grid-container{
+           display: grid;
+           grid-template-columns: repeat(5,100px);
+           grid-template-rows:  repeat(5,100px);
+        }
+        .grid-item{
+            border: 1px solid black;
+            font-size: 40px;
+        }
+        .one{
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .two{
+            background-color: yellowgreen;
+            /* grid-column-start: 3;
+            grid-column-end: 6; */
+            grid-column: 3/6;
+        }
+        .three{
+            background-color: blueviolet;
+            /* grid-row-start: 2;
+            grid-row-end: 6; */
+            grid-row: 2/6;
+        }
+        .four{
+            background-color: chartreuse;
+            /* grid-column: 2/5;
+            grid-row: 2/5; */
+            /* row start / colum start/row end/column end */
+            grid-area:2/2/5/5 ;
+        }
+
+        .five{
+            background-color: violet;
+            grid-row: 2/5;
+        }
+        .six{
+            background-color: turquoise;
+            grid-column: 2/6;
+        }
+      </style>
+</head>
+<body>
+      <div class="grid-container">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+        <div class="grid-item six">6</div>
+      </div>
+    
+</body>
+</html>
+</body>
+</html>
