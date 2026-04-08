@@ -1,0 +1,209 @@
+JavaScript:
+----------
+          - is a scripting langugage
+          - used to create dynamic(behaviour/functionalities) and interactive webpages/application
+          - It is used as client(UI) and server side(Node JS) language
+          - It is a synchornous language(it executes the code line by line )
+          - It is a case sensitive
+
+
+Javascript is used in :
+-----------------------
+                 React JS --library
+                 Node Js  --server
+                 Angular Js --Framework
+
+
+We can add Js in our weppage:
+-----------------------------
+                   1.Inline JS
+                   2.Internal Js
+                   3.External JS
+
+
+Tokens:
+=======
+        building blocks of a program
+        1.Keywords
+        2.Identifiers
+        3.Values/data/literals
+        4.variables
+        5.Operators
+        6.Separators
+
+
+1.keywords: reserved words/pre defined words
+     ex: let , var , const , function , if , for ,while etc.,
+=====================================================================================
+2.Identifiers: names providing to the varibales , objects , functions , list etc.,
+
+Rules:
+   1.names cannot start with number
+   2.names cannot start with special character (except _,$)
+   3.don't provide space between names
+   4.keywords are not allowed for names
+   5.should be short , simple and meaningful
+======================================================================================
+3.value/literal/data:
+       number : 10 , -20 , 46.89
+       String : group of characters
+              : "xyz"  , 'xyz' , `xyz`(back tick/template string -- used for interpolation)
+       boolean: true / false
+       null
+       undefined
+       array : [10 ,20,30]
+       objects:{
+           "key1"=value1,
+           "key2"=value2
+       }
+
+       Data divide into two types:
+        1.Primitive Data Types -- storing single value
+             number
+             Strings
+             boolean
+             null
+             undefined
+             symbol
+             bigint
+              
+        2.Non - Primitive Data Types -- multiple data 
+             objects
+             Json
+             arrays
+             Map
+             Set 
+
+
+Note : typeOf operator helps to know the datatype /literal type 
+
+======================================================================================
+$.variable: It is a container used to store a data /value /literal
+
+Declaration of variable:(providing names)
+------------------------
+            var 
+            let
+            const
+assiging/initalizing the variable:
+--------------------------------
+    let a;
+    a=10;
+
+re declaring the variable
+--------------------------
+    let a ;
+    let a ;
+
+re-assiging/re-initalizing the variable
+---------------------------------------
+    let a;
+    a=10; //assiging
+    a='xyz';//re-assiging
+
+hoisting the variable
+--------------------
+     it is a behaviour where variable and function declarations are moved to top of the scope 
+     before execution
+
+     let a;
+     console.log(a);
+    
+     a=10;
+
+----------------------------------------------------------------------------------------
+                         var                  let                      const
+----------------------------------------------------------------------------------------
+scope                  function               block                    block
+
+re-declare              yes                    No                       no
+
+re-assign               yes                   yes                       no
+
+declaring without      undefined             undefined                 Error
+assiging
+(assiging)              optional             optional                  mandatory
+
+hoisting                 yes                    yes                      yes
+----------------------------------------------------------------------------------------
+
+===============================================================================
+Operators:
+----------
+       its a symbol used to perform operations on values(operands)
+
+       1.Arithmetic Operator :
+                               + , - , * , / , % , ** 
+
+            Note : + acts like concatination(merging) with string
+                   `${}`acts like concatination ---interpolation
+ 
+            Operator Presedence:
+                       ()
+                       **
+                       * / %
+                       + -
+
+       2.Assignment Operator/compund Assignment Operator:
+                              =, +=,-=,*=,/=,&=,**=
+       3.Comaprision Operator/Relational Operator
+                              < ,>,<=,>=,==,===,!=,!==
+
+                Note: ==  -->checks only values and ignores data type
+                      === -->checks both value and data type
+        4.Logical Operator:
+                      && , || , !
+        5.Conditonal Operator/Ternary Operator:
+                     opernad1?operand2:operand3
+
+                     opernad1--->condition
+                     operand2--->true
+                     operand3--->false
+        6.type of operator:
+                         used to know the data type of a literal/value
+        
+        7.unary operator:
+                 1.increment unary operator
+                        1.pre-increment:
+                                         ++value
+                                         first increases the values , then use
+                        2.post-increment:
+                                         value++
+                                         first it uses the value , then increases
+                 2.decrement unary operator
+                        1.pre-decrement:
+                                         --value
+                                         first decreases the values , then use
+                        2.post-decrement:
+                                         value--
+                                         first it uses the value , then decreases
+      
+====================================================================================================
+
+
+Conditional Statements:
+======================
+              used to make descisions
+
+              Types:  
+                 if Statements: when condition satisfy block of code will execute
+                           
+                           syntax: if(condition){
+                                    // code
+                                   }
+
+
+                 else if Statements: if condition satisfy if block will execute,
+                                    if condition is not satisfy then else block will execute
+
+                                    syntax: if(condition){
+                                        // true
+                                    }
+                                    else{
+                                        // false
+                                    }
+                        Note : without if , we cann't use else keyword
+
+                 else if ladder Statements
+                 nested if Statements
+                 switch Statements

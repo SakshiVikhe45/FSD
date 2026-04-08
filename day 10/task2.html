@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Task 2</title>
+    <link rel="icon" href="./image.png" type="image/png">
+    <style>
+        .box{
+            height: 400px;
+            width:  400px;
+            background-color: red;
+        }
+        /* 500px -900px */
+        @media screen  and (min-width:500px) and (max-width:900px)
+        {
+            .box{
+                border-radius: 50%;
+            }
+        }
+        @media screen and (max-width:500px) {
+            .box{
+                border-radius: 50%;
+                background:linear-gradient(to right ,red,skyblue)
+            }
+            
+        }
+
+
+        @media screen and (orientation: portrait){
+            .box{
+                height: 200px;
+                width: 200px;
+                background: linear-gradient(to left , yellow,green);
+            }
+        }
+
+         @media screen and (orientation: landscape){
+            .box{
+                
+                background: url(./image.png)
+            }
+        }
+
+
+
+        /* orientation : portrait  (width<height)
+                        landscape  (width>height)*/
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>
